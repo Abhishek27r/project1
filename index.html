@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rive-Inspired Homepage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">RiveStyle</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <h1 class="headline"><span id="typewriter"></span></h1>
+      <p class="subtitle">Create. Animate. Interact.</p>
+    </div>
+    <div class="hero-animation">
+      <!-- Animated SVG -->
+      <svg id="floating-svg" width="220" height="220" viewBox="0 0 220 220">
+        <circle cx="110" cy="110" r="80" fill="url(#grad1)" opacity="0.7"/>
+        <defs>
+          <radialGradient id="grad1" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#6ee7b7" />
+            <stop offset="100%" stop-color="#3b82f6" />
+          </radialGradient>
+        </defs>
+      </svg>
+    </div>
+  </section>
+  <main>
+    <section id="features" class="glass-section">
+      <h2>Features</h2>
+      <div class="card-grid">
+        <div class="glass-card">Interactive Animations</div>
+        <div class="glass-card">Smooth UX</div>
+        <div class="glass-card">Responsive Design</div>
+      </div>
+    </section>
+    <section id="about" class="glass-section">
+      <h2>About</h2>
+      <p>This is a Rive-inspired homepage built with HTML, CSS, and JS. No frameworks, just web magic!</p>
+    </section>
+    <section id="contact" class="glass-section">
+      <h2>Contact</h2>
+      <p>Get in touch: <a href="mailto:info@rivestyle.com">info@rivestyle.com</a></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html> 
